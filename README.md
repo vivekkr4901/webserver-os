@@ -47,26 +47,6 @@ This project is implemented using `C` and Parsing of HTTP referred from <a href 
 - If a URL opens multiple clients itself, then our cache will store each client’s response as a separate element in the linked list. So, during retrieval from the cache, only a chunk of response will be send and the website will not open
 - Fixed size of cache element, so big websites may not be stored in cache. 
 
-##### How this project can be extended? ​
-- This code can be implemented using multiprocessing that can speed up the process with parallelism.
-- We can decide which type of websites should be allowed by extending the code.
-- We can implement requests like POST with this code.
-
-
-# Note :-
-- Code is well commented. For any doubt you can refer to the comments.
-
-
-## How to Run
-
-```bash
-$ git clone https://github.com/Lovepreet-Singh-LPSK/MultiThreadedProxyServerClient.git
-$ cd MultiThreadedProxyServerClient
-$ make all
-$ ./proxy <port no.>
-```
-`Open http://localhost:port/https://www.cs.princeton.edu/`
-
 # Note:
 - This code can only be run in Linux Machine. Please disable your browser cache.
 - To run the proxy without cache Change the name of the file (`proxy_server_with_cache.c to proxy_server_without_cache.c`) MakeFile.
@@ -75,10 +55,6 @@ $ ./proxy <port no.>
 ![](https://github.com/Lovepreet-Singh-LPSK/MultiThreadedProxyServerClient/blob/main/pics/cache.png)
 - When website is opened for the first time (`url not found`) then cache will be miss.
 - Then if you again open that website again then `Data is retrieved from the cache` will be printed.
-
-## Contributing
-
-[[Back to top]](https://github.com/Lovepreet-Singh-LPSK/MultiThreadedProxyServerClient#index)
 
 Feel free to add some useful. You can see `How this code can be extended`. Use ideas from there and feel free to fork and CHANGE. 
 
